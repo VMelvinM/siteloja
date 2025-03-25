@@ -6,25 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/siteloja/imagens/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="siteloja.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify</title>
     <style>
         h1 {
-            margin-top: 120px; /* Ajuste */
+            margin-top: 100px;
+            /* Ajuste */
         }
     </style>
+
 </head>
 
 <body>
-    
-    
-    <h1 style="color: white;font-size:30px;text-align:center">Sell online with Shopify</h1>
-    <h3 style="color: white;text-align:center;">Trusted by millions of businesses wordwide</h3>
-    <input type= "Entre your email address">
-    <button type="submit"></button>
-    <h2 style="color: white;">Start free trial</h2>
-    <h6 style="color: white;text-align:center">Try Shopify free for 14 days, no credit card required. By entering your
-        email, you agree to receive
-        Shopify</h6>
+
+
+    <div>
+        <!-- Cabeçalho -->
+        <div class="inicio">
+            <h1 style="color: white; font-size: 40px; text-align: center;">Sell online with Shopify</h1>
+            <h3 style="color: white; text-align: center;">Trusted by millions of businesses worldwide</h3>
+            <input type="password" name="password" id="password" placeholder="Enter your email address">
+            <a href="#" class="cta-button">Start free trial</a>
+            <h6 style="color: white; font-size: 10px; text-align: center;">Try Shopify free for 14 days, no credit card
+                required. By entering your email, you agree to receive Shopify</h6>
+        </div>
+
+        <!-- Seção de Recursos -->
+        <div class="features-container">
+            <div class="feature-item">
+                <img src="/siteloja/imagens/f01.JPG" alt="Customizable templates">
+                <h4>Customizable templates</h4>
+                <p>Free website designs to launch your store quickly and easily.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/siteloja/imagens/f02.JPG" alt="All in one">
+                <h4>All in one</h4>
+                <p>Shopify takes care of everything from marketing and payments to secure transactions and shipping.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/siteloja/imagens/f03.JPG" alt="Safe and efficient platform">
+                <h4>A safe and efficient platform</h4>
+                <p>Millions of users trust Shopify to manage their online stores.</p>
+            </div>
+        </div>
+
+
+
+        <div class="marcas">
+
+            <a
+                href="https://www.ceeceesclosetnyc.com/?srsltid=AfmBOorVE8UspQwQ7dNxke6YdRyoyyNyLqCxaDdQ-HXiIun-dT-bh6B2"><img
+                    class="thumb" img src="/siteloja/imagens/ceecloset.JPG" alt="ceecloset"></a>
+            <a href="https://nalatanalata.com/"><img class="thumb" img src="/siteloja/imagens/novata.jpg"
+                    alt="novata"></a>
+            <a href="https://kirrinfinch.com/"><img class="thumb" img src="/siteloja/imagens/kirrin fich.jpg"
+                    alt="kirrin fich"></a>
+            <a href="https://tokyobike.de/"><img class="thumb" img src="/siteloja/imagens/tokyobike.jpg"
+                    alt="tokyobike"></a>
+            <a href="https://www.mesogoods.com/"><img class="thumb" img src="/siteloja/imagens/meso.jpg" alt="meso"></a>
+            <a href="https://www.cocoandbreezymusic.com/"><img class="thumb" img src="/siteloja/imagens/coco and.jpg"
+                    alt="coco and"></a>
+            <a href="https://www.brooklynmuseum.org/"><img class="thumb" img src="/siteloja/imagens/brooklyn.jpg"
+                    alt="brooklyn"></a>
+            <a href="https://www.adoreme.com/"><img class="thumb" src="/siteloja/imagens/adore me.jpg"
+                    alt="adore me"></a>
+
+
+
+        </div>
+
+        <!-- Depoimento -->
+        <section class="testimonial">
+            <p>“Shopify is better than any other platform we’ve played with, and we’ve played with them all.”</p>
+            <p><strong>JONATHON BAYME, CEO OF THEORY11</strong></p>
+            <a href="#" class="cta-button">Start free trial</a>
+        </section>
+
+        <!-- Seção de FAQs -->
+        <section class="faq-container">
+            <h2>FAQs</h2>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>What is Shopify and how does it work?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Shopify is an e-commerce platform that allows you to create and manage an online store easily.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>How much does Shopify cost?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Shopify offers different pricing plans, starting from a basic package to advanced options.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>Can I use my own domain name with Shopify?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, Shopify allows you to use your own domain name for your store.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    <span>Do I need to be a designer or developer to use Shopify?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    No, Shopify is designed for all users, even those without coding or design experience.
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </footer>
+
+        <script>
+            function toggleFAQ(element) {
+                element.classList.toggle("active");
+            }
+        </script>
+
+
+    </div>
+
+
+
 
 
 </body>
